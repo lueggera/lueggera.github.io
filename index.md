@@ -1,5 +1,5 @@
-Here you can say lots of fun things about your site.
+Analysis of Baseball with Statistical Methods
 
-Maybe say a some things about yourself.
+2024 Updates
 
-Or maybe what you plan to blog about.
+General Thoughts
