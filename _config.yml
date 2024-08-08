@@ -1,13 +1,13 @@
 title: "Lucas Ben"
 author: "Lucas Ben"
-description: "A place to share my data science projects." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "Exploring the world of data science through projects and insights." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
 email: "lben@dal.ca"
 twitter_username: "twitteruser"
 github_username: "githubuser"
-linkedin_username: "www.linkedin.com/in/lucas-b-619178204"
+linkedin_username: "lucas-b-619178204"
 #facebook_username: username
 #flickr_username: username
 #instagram_username: username
@@ -18,7 +18,7 @@ linkedin_username: "www.linkedin.com/in/lucas-b-619178204"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: "midnight"
+theme: "minima"
 
 rss: rss
 
@@ -29,6 +29,8 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag # helps with SEO meta tags
+  - jekyll-analytics # Google Analytics
 
 titles_from_headings:
   strip_title: true
@@ -39,4 +41,31 @@ defaults:
       path: ""
       type: post
     values:
-      tags: Other
+    layout: "post"
+      tags: ["Data Science", "Projects"]
+
+seo:
+  type: "website"
+  description: "Lucas Ben's portfolio showcasing data science projects."
+  url: "https://lueggera.github.io/"
+  image: "/assets/images/og-image.png" # add an Open Graph image
+
+navigation:
+- name: "Home"
+  url: "/"
+- name: "About"
+  url: "/about/"
+- name: "Projects"
+  url: "/projects/"
+- name: "Blog"
+  url: "/blog/"
+
+sidebar: 
+  enabled: true
+  items:
+    - title: "About Me:
+      content: "I'm a math/stats major in my last year at Dalhousie University interested in ML models and sports analytics."
+    - title: "Recent Posts"
+      list: "posts"
+
+permalink: /:categories/:title/
